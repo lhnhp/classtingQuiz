@@ -1,28 +1,28 @@
-import React, {useRef, useState} from 'react';
+import React */, {useRef, useState}/* from 'react';
 import { Link } from 'react-router-dom';
-import { collapseTextChangeRangesAcrossMultipleVersions } from 'typescript';
+// import AnswerNoteTable from './AnswerNoteTable';
 //스타일
 import { GlobalStyle, Wrapper } from '../App.styles';
-import AnswerNoteTable from './AnswerNoteTable';
-
-let answer = [
-    {
-        wQuestion: '',
-        chAnswer: '',
-        opinion: ''
-    },
-] as any ;
-
-const insertAnswer = (wQuestion:string, chAnswer:string, opinion:string) => {
-    answer.push({wQuestion,chAnswer,opinion});
-}
 
 
-for(let i = 0 ; i < localStorage.length ; i++  ){
-    localStorage.getItem("w"+(i+1));
+// let answer = [
+//     {
+//         wQuestion: '',
+//         chAnswer: '',
+//         opinion: ''
+//     },
+// ] as any ;
+
+// const insertAnswer = (wQuestion:string, chAnswer:string, opinion:string) => {
+//     answer.push({wQuestion,chAnswer,opinion});
+// }
 
 
-}
+// for(let i = 0 ; i < localStorage.length ; i++  ){
+//     localStorage.getItem("w"+(i+1));
+
+
+// }
 
 
 
