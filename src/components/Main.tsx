@@ -20,12 +20,12 @@ const TOTAL_QUESTION = 5;
 let startTime = 0;
 let endTime = 0;
 let timeTaken = 0;
-//오답번호
-let wrongNum = 1;
 //차트숫자
 let chartNum = 1;
+//오답번호
+// let wrongNum = 1;
 //오답배열
-let arr: string[] = [];
+// let arr: string[] = [];
 
 
 export type AnswerObject = {
@@ -71,12 +71,12 @@ const Main = () => {
       const correct = questions[number].correct_answer === answer;
     //점수계산
       if(correct) setScore(prev => prev + 1);
-    //세션처리  
-      if(!correct){
-        arr.push(questions[number].question,questions[number].correct_answer)
-        const arrString = JSON.stringify(arr);
-        window.localStorage.setItem("answers",arrString);
-      }
+    //답노트세션처리  
+//       if(!correct){
+//         arr.push(questions[number].question,questions[number].correct_answer)
+//         const arrString = JSON.stringify(arr);
+//         window.localStorage.setItem("answers",arrString);
+//       }
     //정답저장
       const AnswerObject = {
         question: questions[number].question,
